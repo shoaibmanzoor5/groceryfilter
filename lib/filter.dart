@@ -8,6 +8,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+
+import 'beverages.dart';
 
 
 class filter extends StatefulWidget {
@@ -236,11 +240,8 @@ class _filterState extends State<filter> {
                         color: Colors.white),
                   ),
                   onPressed: () {
+                    Get.to(()=>Beverages());
 
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(builder: (context) => new postadd()),
-                    // );
                   },
                   style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
